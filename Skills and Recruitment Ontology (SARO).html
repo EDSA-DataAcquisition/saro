@@ -1,0 +1,1090 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0048)http://eis.iai.uni-bonn.de/vocab/saro/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" class="gr__eis_iai_uni-bonn_de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+
+  
+  <title>Skills and Recruitment Ontology (SARO)</title>
+
+
+</head>
+
+
+<body data-gr-c-s-loaded="true">
+
+<div class="head">
+
+
+<h1>Skills and Recruitment Ontology</h1>
+
+
+<big style="color: rgb(0, 90, 156);">13.06.2016</big>
+
+<br>
+
+
+<dl>
+
+  <dt>Authors:</dt>
+
+  <dd>Elisa Margareth Sibarani, University of Bonn, <a href="mailto:sibarani@iai.uni-bonn.de">sibarani@iai.uni-bonn.de</a></dd>
+  <dd>Simon Scerri, Fraunhofer IAIS, Germany, <a href="mailto:scerri@iai.uni-bonn.de">scerri@iai.uni-bonn.de</a></dd>
+  <dd>Aba-Sah Dadzie, KMi, The Open University, UK, <a href="mailto:aba-sah.dadzie@open.ac.uk">aba-sah.dadzie@open.ac.uk</a></dd>
+</dl>
+
+  
+ <dl>
+
+  <dt>Editor:</dt>
+  
+  
+  <dd>Elisa Margareth Sibarani, University of Bonn, <a href="mailto:sibarani@iai.uni-bonn.de">sibarani@iai.uni-bonn.de</a></dd>
+
+</dl>
+
+<dl>
+
+  <dt></dt>
+
+  <dt><span style="font-weight: bold;">Ontology:</span></dt>
+
+  <dd>XML/RDFS Serialization: <span style="color:red;"> (available soon!) </span></dd>
+
+  <dd>N3 Serialization:<span style="color:red;">  (available soon!)</span></dd>
+
+  <dd>XML/RDFS Serialization: <span style="color:red;"> (available soon!)</span></dd>
+
+  <dd>N3 Serialization: <span style="color:red;"> (available soon!)</span></dd>
+
+
+</dl>
+
+<dl>
+
+</dl>
+
+</div>
+
+
+<hr>
+<h2>Abstract</h2>
+
+
+<p style="text-align: justify;"> These specifications introduce the SARO Ontology and its vocabulary.
+</p>
+
+<h2> Status of this document</h2>
+
+<div id="sotd">
+<p style="text-align: justify;"> This document arose from
+the work done in the <a href="http://edsa-project.eu/">EDSA project</a>.
+</p>
+
+</div>
+
+<h2 style="background-color: rgb(255, 255, 255);"><a class="mozTocH2" name="mozTocIdOntologyVisualisation"></a><a name="Ontology_Visualisation"></a>Ontology Visualisation</h2>
+
+<div class="figure"><a name="saro-visualization"></a><p class="title"></p><div class="figure-contents">
+	<a class="ulink" href="./Skills and Recruitment Ontology (SARO)_files/saro_model_instances_legend.jpg" target="_top">
+		<div class="mediaobject"><img src="./Skills and Recruitment Ontology (SARO)_files/saro_model_instances_legend.jpg" width="459"></div>
+	</a>
+	</div></div>
+
+	
+<div>
+<h2 id="intro">Ontology description</h2>
+
+<p style="text-align: justify;">The Skills and Recruitment Ontology (SARO) is a domain ontology representing occupations, skills and recruitment. 
+It is modelled by considering several similar context models, but is mainly inspired by the European Skills, Competences, Qualifications and Occupations ontology (ESCO) and Schema.org. 
+The ontology is structured along four dimensions: job posts, skills, qualifications and users.
+</p>
+<p style="text-align: justify;"> Job posts refers to job advertisements by organizations. Advertised job openings comprise various essential attributes, 
+such as the job role, title, the relevant sector and other related descriptions (defined by Schema.org, e.g. job location, date posted, working hours, etc.).  
+</p>
+<p style="text-align: justify;"> One of the most important job requirements that are usually explicitly define is the list of qualifications fitting for this role, 
+including fundamental skills which are required to fulfil the role. SARO also describes the proficiency level for each skill. Skills are harnessed by a group of users based on their tasks. For example, an educator or trainer could develop training resources 
+related to certain skills or competences. In order to do so, specific skill can be chosen by considering the skill gap of another user group, e.g. the domain specialist.
+ </p> 
+<p style="text-align: justify;"> The ontology also considers and maintains two additional registers for Awarding Body (defined by ESCO) and Curriculum.  
+The former is an official or otherwise recognized institution, organization or company which is able to provide qualifications and certifications. 
+Based on these, curricula can be formed.
+ </p> 
+</div>
+
+
+
+<h2>Ontology Instances Description</h2>
+
+<span style="font-weight: bold; color:red">NOTE: SARO Instances ARE NOT 
+covered in the specifications below. For a complete list please refer to
+ the visualisation or the XML/RDFS Serialization file provided.</span>
+
+
+
+
+<script src="./Skills and Recruitment Ontology (SARO)_files/a.js.download" type="text/javascript"></script><h2>Ontology Classes Description</h2>
+<a name="Capability">
+<h3>Capability</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#needsSkill">saro:needsSkill</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#requiresQualification">saro:requiresQualification</a></td></tr> 
+<tr><td class="rowheader">In range of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#hasCapability">saro:hasCapability</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#requiresCapability">saro:requiresCapability</a></td></tr> 
+<tr><td>Description </td><td> This class represents a list of skills which is required in a job role </td></tr> 
+</tbody></table>
+
+
+</a><a name="Capacity">
+<h3>Capacity</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#toAbsorb">saro:toAbsorb</a></td></tr> 
+<tr><td class="rowheader">In range of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#hasCapacity">saro:hasCapacity</a></td></tr> 
+<tr><td>Description </td><td> The class which covers the ability to apply the skills in a professional environment </td></tr> 
+</tbody></table>
+
+
+</a><a name="Curriculum">
+<h3>Curriculum</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#describesResource">saro:describesResource</a></td></tr> 
+<tr><td class="rowheader">In range of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#follows">saro:follows</a></td></tr> 
+<tr><td>Description </td><td> This class represents a collection of courses to develop skills </td></tr> 
+</tbody></table>
+
+
+</a><a name="DataSource">
+<h3>DataSource</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td> --</td></tr> 
+<tr><td class="rowheader">In range of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#derivedFrom">saro:derivedFrom</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#feedsInto">saro:feedsInto</a></td></tr> 
+<tr><td>Description </td><td> The data source represents both the data mined specifically for the project and other third party KBs. </td></tr> 
+</tbody></table>
+
+
+</a><a name="DecisionMaker">
+<h3>DecisionMaker</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> rdfs:Resource, x:User</td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#allocatesResourcesTo">saro:allocatesResourcesTo</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#defines">saro:defines</a></td></tr> 
+<tr><td class="rowheader">In range of: </td><td> --</td></tr> 
+<tr><td>Description </td><td> The Decision Maker class is a group of people who is responsible for the definition of new roles and essential skills for them, who will also influence training of new and existing employees </td></tr> 
+</tbody></table>
+
+
+</a><a name="Demand">
+<h3>Demand</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#feedsInto">saro:feedsInto</a></td></tr> 
+<tr><td class="rowheader">In range of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#browses">saro:browses</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#hasDemand">saro:hasDemand</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#seeksToFill">saro:seeksToFill</a></td></tr> 
+<tr><td>Description </td><td> This class represents the gaps of skills for specific job title</td></tr> 
+</tbody></table>
+
+
+</a><a name="DomainSpecialist">
+<h3>DomainSpecialist</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> rdfs:Resource,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#User">saro:User</a></td></tr> 
+<tr><td class="rowheader">Subclasses </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Practitioner">saro:Practitioner</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Trainee">saro:Trainee</a></td></tr> 
+<tr><td class="rowheader">In domain of: </td><td> --</td></tr> 
+<tr><td class="rowheader">In range of: </td><td> --</td></tr> 
+<tr><td>Description </td><td> The Domain Specialist class represents the class of people who is practising or new in a certain domain</td></tr> 
+</tbody></table>
+
+
+</a><a name="EducatororTrainer">
+<h3>EducatororTrainer</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> rdfs:Resource,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#User">saro:User</a></td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#develops">saro:develops</a></td></tr> 
+<tr><td class="rowheader">In range of: </td><td> --</td></tr> 
+<tr><td>Description </td><td> The Educator or Trainer class represents the institution and personnel who will develop learning resources</td></tr> 
+</tbody></table>
+
+
+</a><a name="Expertise">
+<h3>Expertise</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td> --</td></tr> 
+<tr><td class="rowheader">In range of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#hasExpertise">saro:hasExpertise</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#leadsTo">saro:leadsTo</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#requiresExpertise">saro:requiresExpertise</a></td></tr> 
+<tr><td>Description </td><td> An advanced or exceptional knowledge or skill in an area or topic </td></tr> 
+</tbody></table>
+
+
+</a><a name="InformationNeed">
+<h3>InformationNeed</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#drivenByInterest">saro:drivenByInterest</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#drivenByKnowledge">saro:drivenByKnowledge</a></td></tr> 
+<tr><td class="rowheader">In range of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#drives">saro:drives</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#satisfies">saro:satisfies</a></td></tr> 
+<tr><td>Description </td><td> This class defines list of information which is required as a target to be fulfilled by training resource</td></tr> 
+</tbody></table>
+
+
+</a><a name="J.Public">
+<h3>J.Public</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> rdfs:Resource,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#User">saro:User</a></td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#browses">saro:browses</a></td></tr> 
+<tr><td class="rowheader">In range of: </td><td> --</td></tr> 
+<tr><td>Description </td><td> The J.Public class is a group of people which is called non-domain end user, who may or may not be a technology expert </td></tr> 
+</tbody></table>
+
+
+</a><a name="JobPosting">
+<h3>JobPosting</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> x:JobPosting, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#advertisedIn">saro:advertisedIn</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#describes">saro:describes</a></td></tr> 
+<tr><td class="rowheader">In range of: </td><td> --</td></tr> 
+<tr><td>Description </td><td> a listing that describes a job opening in a certain organization</td></tr> 
+</tbody></table>
+
+
+</a><a name="JobRoleOrType">
+<h3>JobRoleOrType</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#foundIn">saro:foundIn</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#requiresCapability">saro:requiresCapability</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#requiresExpertise">saro:requiresExpertise</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#requiresKnowledge">saro:requiresKnowledge</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#requiresSkill">saro:requiresSkill</a></td></tr> 
+<tr><td class="rowheader">In range of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#defines">saro:defines</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#describes">saro:describes</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#hasDemandFor">saro:hasDemandFor</a></td></tr> 
+<tr><td>Description </td><td> The title of the job</td></tr> 
+</tbody></table>
+
+
+</a><a name="JobSpecificSkill">
+<h3>JobSpecificSkill</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> esco:Concept, rdfs:Resource,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Subclasses </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Product">saro:Product</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Tool">saro:Tool</a></td></tr> 
+<tr><td class="rowheader">In domain of: </td><td> --</td></tr> 
+<tr><td class="rowheader">In range of: </td><td> --</td></tr> 
+<tr><td>Description </td><td> This class represents specialised and relevant skill for jobs within a specific economic sector, context or occupation </td></tr> 
+</tbody></table>
+
+
+</a><a name="KnowledgeBase">
+<h3>KnowledgeBase</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#definesSkill">saro:definesSkill</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#derivedFrom">saro:derivedFrom</a></td></tr> 
+<tr><td class="rowheader">In range of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#createdFrom">saro:createdFrom</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#feedsIntoKB">saro:feedsIntoKB</a></td></tr> 
+<tr><td>Description </td><td> A class represents the underlying set of know-what e.g. programming languages, design tools </td></tr> 
+</tbody></table>
+
+
+</a><a name="Practitioner">
+<h3>Practitioner</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#DomainSpecialist">saro:DomainSpecialist</a>, rdfs:Resource,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#User">saro:User</a></td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td> --</td></tr> 
+<tr><td class="rowheader">In range of: </td><td> --</td></tr> 
+<tr><td>Description </td><td> The Practitioner class represents a group of people who is practising in a certain domain </td></tr> 
+</tbody></table>
+
+
+</a><a name="Product">
+<h3>Product</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> esco:Concept,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#JobSpecificSkill">saro:JobSpecificSkill</a>, rdfs:Resource,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td> --</td></tr> 
+<tr><td class="rowheader">In range of: </td><td> --</td></tr> 
+<tr><td>Description </td><td> This class represents skill which is related to an ability to use a particular product to support the job task </td></tr> 
+</tbody></table>
+
+
+</a><a name="ProficiencyLevel">
+<h3>ProficiencyLevel</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td> --</td></tr> 
+<tr><td class="rowheader">In range of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#atProficiencyLevel">saro:atProficiencyLevel</a></td></tr> 
+<tr><td>Description </td><td> This class represents a measurement system based on popular standards for the level of understanding and ability in a certain skill</td></tr> 
+</tbody></table>
+
+
+</a><a name="Qualification">
+<h3>Qualification</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> esco:Concept, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#feedsIntoKB">saro:feedsIntoKB</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#qualificationExpirationPeriod">saro:qualificationExpirationPeriod</a></td></tr> 
+<tr><td class="rowheader">In range of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#leadsToQualification">saro:leadsToQualification</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#legallyRequiredQualification">saro:legallyRequiredQualification</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#requiresQualification">saro:requiresQualification</a></td></tr> 
+<tr><td>Description </td><td> The Qualification class represents the official or formal certification of one or more acquired skills or competences</td></tr> 
+</tbody></table>
+
+
+</a><a name="Recruiter">
+<h3>Recruiter</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> rdfs:Resource,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#User">saro:User</a></td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#seeksToFill">saro:seeksToFill</a></td></tr> 
+<tr><td class="rowheader">In range of: </td><td> --</td></tr> 
+<tr><td>Description </td><td> The Recruiter class is the class of people who usually take in charge for the recruitment process in an organization and he/she may also influence the language in and the interpretation of job advertisement </td></tr> 
+</tbody></table>
+
+
+</a><a name="Sector">
+<h3>Sector</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#hasDemand">saro:hasDemand</a></td></tr> 
+<tr><td class="rowheader">In range of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#advertisedIn">saro:advertisedIn</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#foundIn">saro:foundIn</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#isCoreTo">saro:isCoreTo</a></td></tr> 
+<tr><td>Description </td><td> The sector associated with the job position</td></tr> 
+</tbody></table>
+
+
+</a><a name="Skill">
+<h3>Skill</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> esco:Concept, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Subclasses </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#JobSpecificSkill">saro:JobSpecificSkill</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Product">saro:Product</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Tool">saro:Tool</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#TransversalSkill">saro:TransversalSkill</a></td></tr> 
+<tr><td class="rowheader">In domain of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#acquiredVia">saro:acquiredVia</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#atProficiencyLevel">saro:atProficiencyLevel</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#coOccursWith">saro:coOccursWith</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#drives">saro:drives</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#frequencyOfMention">saro:frequencyOfMention</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#isCoreTo">saro:isCoreTo</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#leadsTo">saro:leadsTo</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#leadsToQualification">saro:leadsToQualification</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#requires">saro:requires</a></td></tr> 
+<tr><td class="rowheader">In range of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#coOccursWith">saro:coOccursWith</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#definesSkill">saro:definesSkill</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#fillSkillGap">saro:fillSkillGap</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#hasEssentialSkill">saro:hasEssentialSkill</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#hasSkill">saro:hasSkill</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#hasSkillGap">saro:hasSkillGap</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#needsSkill">saro:needsSkill</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#relatedTo">saro:relatedTo</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#requires">saro:requires</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#requiresSkill">saro:requiresSkill</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#toAbsorb">saro:toAbsorb</a></td></tr> 
+<tr><td>Description </td><td> The skill class represents the ability to carry out managerial or technical tasks</td></tr> 
+</tbody></table>
+
+
+</a><a name="Tool">
+<h3>Tool</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> esco:Concept,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#JobSpecificSkill">saro:JobSpecificSkill</a>, rdfs:Resource,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td> --</td></tr> 
+<tr><td class="rowheader">In range of: </td><td> --</td></tr> 
+<tr><td>Description </td><td> This class represents skill which is related to an ability to use a particular tool to support the job task </td></tr> 
+</tbody></table>
+
+
+</a><a name="Topic">
+<h3>Topic</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> x:JobSpecificSkill, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td> --</td></tr> 
+<tr><td class="rowheader">In range of: </td><td> --</td></tr> 
+<tr><td>Description </td><td> This class represents all demonstrated abilities to apply skills in a certain topic </td></tr> 
+</tbody></table>
+
+
+</a><a name="Trainee">
+<h3>Trainee</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#DomainSpecialist">saro:DomainSpecialist</a>, rdfs:Resource,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#User">saro:User</a></td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td> --</td></tr> 
+<tr><td class="rowheader">In range of: </td><td> --</td></tr> 
+<tr><td>Description </td><td> The Trainee class represents a group of people who is new in a certain domain </td></tr> 
+</tbody></table>
+
+
+</a><a name="TrainingResource">
+<h3>TrainingResource</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#createdFrom">saro:createdFrom</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#relatedTo">saro:relatedTo</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#satisfies">saro:satisfies</a></td></tr> 
+<tr><td class="rowheader">In range of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#acquiredVia">saro:acquiredVia</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#allocatesResourcesTo">saro:allocatesResourcesTo</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#describesResource">saro:describesResource</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#develops">saro:develops</a></td></tr> 
+<tr><td>Description </td><td> This class covers the resources which is created in purpose of specific curricula and related skill </td></tr> 
+</tbody></table>
+
+
+</a><a name="TransversalSkill">
+<h3>TransversalSkill</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> esco:Concept, rdfs:Resource,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td> --</td></tr> 
+<tr><td class="rowheader">In range of: </td><td> --</td></tr> 
+<tr><td>Description </td><td> This class represents list of skills which are relevant to a broad range of occupations and sectors. They are often referred to as core skills, basic skills or soft skills </td></tr> 
+</tbody></table>
+
+
+</a><a name="User">
+<h3>User</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Subclasses </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#DomainSpecialist">saro:DomainSpecialist</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#EducatororTrainer">saro:EducatororTrainer</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#J.Public">saro:J.Public</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Practitioner">saro:Practitioner</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Recruiter">saro:Recruiter</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Trainee">saro:Trainee</a></td></tr> 
+<tr><td class="rowheader">In domain of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#hasExpertise">saro:hasExpertise</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#hasSkill">saro:hasSkill</a>,  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#hasSkillGap">saro:hasSkillGap</a></td></tr> 
+<tr><td class="rowheader">In range of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#forUserType">saro:forUserType</a></td></tr> 
+<tr><td>Description </td><td> The User class represents people who able to do one or more tasks </td></tr> 
+</tbody></table>
+
+
+</a><a name="UserTask">
+<h3>UserTask</h3>
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Superclasses </td><td> rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Subclasses </td><td> --</td></tr> 
+<tr><td class="rowheader">In domain of: </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#forUserType">saro:forUserType</a></td></tr> 
+<tr><td class="rowheader">In range of: </td><td> --</td></tr> 
+<tr><td>Description </td><td> The User Task class covers list of tasks for every type of user in the context </td></tr> 
+</tbody></table>
+
+
+<h2>Ontology Properties Description</h2>
+
+</a><a name="acquiredVia">
+<h3>acquiredVia</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#TrainingResource">saro:TrainingResource</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property marks that a skill can be acquired via one or more training resource. </td></tr> 
+</tbody></table>
+
+
+</a><a name="advertisedIn">
+<h3>advertisedIn</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#JobPosting">saro:JobPosting</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Sector">saro:Sector</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> Links one job posting to one sector.  </td></tr> 
+</tbody></table>
+
+
+</a><a name="allocatesResourcesTo">
+<h3>allocatesResourcesTo</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#DecisionMaker">saro:DecisionMaker</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#TrainingResource">saro:TrainingResource</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property is used to link the decision maker with the training resources which has been allocated or influenced by him.</td></tr> 
+</tbody></table>
+
+
+</a><a name="atProficiencyLevel">
+<h3>atProficiencyLevel</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#ProficiencyLevel">saro:ProficiencyLevel</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property marks that a skill could have one ProficiencyLevel. </td></tr> 
+</tbody></table>
+
+
+</a><a name="browses">
+<h3>browses</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#J.Public">saro:J.Public</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Demand">saro:Demand</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> User type public is able to browse the demand, therefore this property is used to link public with specific demand.</td></tr> 
+</tbody></table>
+
+
+</a><a name="coOccursWith">
+<h3>coOccursWith</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> One skill possibly occurs together with another skill in a specific job posting, and the property points to one or more skill. </td></tr> 
+</tbody></table>
+
+
+</a><a name="createdFrom">
+<h3>createdFrom</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#TrainingResource">saro:TrainingResource</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#KnowledgeBase">saro:KnowledgeBase</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property is used to refer to knowledge base which creates the training resource.</td></tr> 
+</tbody></table>
+
+
+</a><a name="defines">
+<h3>defines</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#DecisionMaker">saro:DecisionMaker</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#JobRoleOrType">saro:JobRoleOrType</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property is used to link the decision maker with the new roles which has been defined by him.</td></tr> 
+</tbody></table>
+
+
+</a><a name="definesSkill">
+<h3>definesSkill</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#KnowledgeBase">saro:KnowledgeBase</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property is used to refer to skill which is defined by the knowledge base.</td></tr> 
+</tbody></table>
+
+
+</a><a name="derivedFrom">
+<h3>derivedFrom</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#KnowledgeBase">saro:KnowledgeBase</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#DataSource">saro:DataSource</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property is used to refer to data source that derives the knowledge base.</td></tr> 
+</tbody></table>
+
+
+</a><a name="describes">
+<h3>describes</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#JobPosting">saro:JobPosting</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#JobRoleOrType">saro:JobRoleOrType</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> Links one job posting to its role or type. </td></tr> 
+</tbody></table>
+
+
+</a><a name="describesResource">
+<h3>describesResource</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Curriculum">saro:Curriculum</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#TrainingResource">saro:TrainingResource</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property is used to refer to training resource which is described by the curriculum.</td></tr> 
+</tbody></table>
+
+
+</a><a name="develops">
+<h3>develops</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#EducatororTrainer">saro:EducatororTrainer</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#TrainingResource">saro:TrainingResource</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property is used to link the training course which has been developed by an educator or trainer.</td></tr> 
+</tbody></table>
+
+
+</a><a name="drivenByInterest">
+<h3>drivenByInterest</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#InformationNeed">saro:InformationNeed</a></td></tr> 
+<tr><td class="rowheader">Range </td><td> x:Interest</td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property is used to refer to interest which drives the information need.</td></tr> 
+</tbody></table>
+
+
+</a><a name="drivenByKnowledge">
+<h3>drivenByKnowledge</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#InformationNeed">saro:InformationNeed</a></td></tr> 
+<tr><td class="rowheader">Range </td><td> x:Knowledge</td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property is used to refer to knowledge which drives the information need.</td></tr> 
+</tbody></table>
+
+
+</a><a name="drives">
+<h3>drives</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#InformationNeed">saro:InformationNeed</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> One skill can drive the information need. </td></tr> 
+</tbody></table>
+
+
+</a><a name="feedsInto">
+<h3>feedsInto</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Demand">saro:Demand</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#DataSource">saro:DataSource</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property marks that a demand could contribute to one or more data source. </td></tr> 
+</tbody></table>
+
+
+</a><a name="feedsIntoKB">
+<h3>feedsIntoKB</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Qualification">saro:Qualification</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#KnowledgeBase">saro:KnowledgeBase</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property links the qualification with knowledge base that indicates the contribution for adding the knowledge base.</td></tr> 
+</tbody></table>
+
+
+</a><a name="fillSkillGap">
+<h3>fillSkillGap</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td> x:Goal</td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property is used to refer to which skill does a goal will fill the defined gap.</td></tr> 
+</tbody></table>
+
+
+</a><a name="follows">
+<h3>follows</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td> x:Plan</td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Curriculum">saro:Curriculum</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property is used to refer to curriculum which is followed by a plan.</td></tr> 
+</tbody></table>
+
+
+</a><a name="forUserType">
+<h3>forUserType</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#UserTask">saro:UserTask</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#User">saro:User</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property is used to refer a specific user task with the user.</td></tr> 
+</tbody></table>
+
+
+</a><a name="foundIn">
+<h3>foundIn</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#JobRoleOrType">saro:JobRoleOrType</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Sector">saro:Sector</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> Links one Job Role to a sector.  </td></tr> 
+</tbody></table>
+
+
+</a><a name="frequencyOfMention">
+<h3>frequencyOfMention</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Range </td><td> xsd:integer</td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> One skill usually specify their number of occurrence in a particular job posting, in which it points out to an integer. </td></tr> 
+</tbody></table>
+
+
+</a><a name="hasCapability">
+<h3>hasCapability</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td> geo:Location</td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Capability">saro:Capability</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property is used to refer a location with the capability for that specific location.</td></tr> 
+</tbody></table>
+
+
+</a><a name="hasCapacity">
+<h3>hasCapacity</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td> geo:Location</td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Capacity">saro:Capacity</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property is used to refer a location with the capacity for that specific location.</td></tr> 
+</tbody></table>
+
+
+</a><a name="hasDemand">
+<h3>hasDemand</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Sector">saro:Sector</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Demand">saro:Demand</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> One sector could specify their demand, and the property points to one or more demand. </td></tr> 
+</tbody></table>
+
+
+</a><a name="hasDemandFor">
+<h3>hasDemandFor</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td> geo:Location</td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#JobRoleOrType">saro:JobRoleOrType</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property links the location to one or more job role or type which indicates that there is a demand for a location toward specific job role.</td></tr> 
+</tbody></table>
+
+
+</a><a name="hasEssentialSkill">
+<h3>hasEssentialSkill</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td> esco:Occupation</td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property links the occupation with one or more skill in which those occupation must have.</td></tr> 
+</tbody></table>
+
+
+</a><a name="hasExpertise">
+<h3>hasExpertise</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#User">saro:User</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Expertise">saro:Expertise</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> Links a user with his expertise.</td></tr> 
+</tbody></table>
+
+
+</a><a name="hasSkill">
+<h3>hasSkill</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#User">saro:User</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> Links a user with the skill of which he has been qualified for.</td></tr> 
+</tbody></table>
+
+
+</a><a name="hasSkillGap">
+<h3>hasSkillGap</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#User">saro:User</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> Links a user with the skill of which he has not been qualified for.</td></tr> 
+</tbody></table>
+
+
+</a><a name="isCoreTo">
+<h3>isCoreTo</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Sector">saro:Sector</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property marks that a skill is a core to one or more sector. </td></tr> 
+</tbody></table>
+
+
+</a><a name="leadsTo">
+<h3>leadsTo</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Expertise">saro:Expertise</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property marks that a skill could lead to one or more expertise. </td></tr> 
+</tbody></table>
+
+
+</a><a name="leadsToQualification">
+<h3>leadsToQualification</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Qualification">saro:Qualification</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property marks that a skill could define one or more qualification. </td></tr> 
+</tbody></table>
+
+
+</a><a name="legallyRequiredQualification">
+<h3>legallyRequiredQualification</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td> esco:Occupation</td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Qualification">saro:Qualification</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property links the occupation with one or more qualification.</td></tr> 
+</tbody></table>
+
+
+</a><a name="needsSkill">
+<h3>needsSkill</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Capability">saro:Capability</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> Links a capability with the required skill for that capability.</td></tr> 
+</tbody></table>
+
+
+</a><a name="qualificationExpirationPeriod">
+<h3>qualificationExpirationPeriod</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Qualification">saro:Qualification</a></td></tr> 
+<tr><td class="rowheader">Range </td><td> xsd:duration</td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> Records the period of how long a qualification is valid.</td></tr> 
+</tbody></table>
+
+
+</a><a name="relatedTo">
+<h3>relatedTo</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#TrainingResource">saro:TrainingResource</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property is used to refer to skill which relates to one or more training resource.</td></tr> 
+</tbody></table>
+
+
+</a><a name="requires">
+<h3>requires</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> One skill can simultaneously consist of various skill subclasses as defined by SARO. These are semantically related to the parent skill through this property. </td></tr> 
+</tbody></table>
+
+
+</a><a name="requiresCapability">
+<h3>requiresCapability</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#JobRoleOrType">saro:JobRoleOrType</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Capability">saro:Capability</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> One job role usually specify their required capability, and the property points to one or more capability. </td></tr> 
+</tbody></table>
+
+
+</a><a name="requiresExpertise">
+<h3>requiresExpertise</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#JobRoleOrType">saro:JobRoleOrType</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Expertise">saro:Expertise</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> One job role usually specify their required expertise, and the property points to one or more expertise. </td></tr> 
+</tbody></table>
+
+
+</a><a name="requiresKnowledge">
+<h3>requiresKnowledge</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#JobRoleOrType">saro:JobRoleOrType</a></td></tr> 
+<tr><td class="rowheader">Range </td><td> x:Knowledge</td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> One job role usually specify their required knowledge, and the property points to one or more knowledge. </td></tr> 
+</tbody></table>
+
+
+</a><a name="requiresQualification">
+<h3>requiresQualification</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Capability">saro:Capability</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Qualification">saro:Qualification</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> Links a capability with the required qualification for that capability.</td></tr> 
+</tbody></table>
+
+
+</a><a name="requiresSkill">
+<h3>requiresSkill</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#JobRoleOrType">saro:JobRoleOrType</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> One job role usually specify their required skill, and the property points to one or more skill. </td></tr> 
+</tbody></table>
+
+
+</a><a name="satisfies">
+<h3>satisfies</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#TrainingResource">saro:TrainingResource</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#InformationNeed">saro:InformationNeed</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property is used to refer to information need which is satisfied by the training resource.</td></tr> 
+</tbody></table>
+
+
+</a><a name="seeksToFill">
+<h3>seeksToFill</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Recruiter">saro:Recruiter</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Demand">saro:Demand</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> A recruiter is responsible for the recruitment process of specific job role, but first should get the demand picture of those role and therefore this property is used to link recruiter with specific demand.</td></tr> 
+</tbody></table>
+
+
+</a><a name="toAbsorb">
+<h3>toAbsorb</h3> 
+
+<table class="ontdoctable"> 
+<tbody><tr><td class="rowheader">Type </td><td> rdf:Property, rdfs:Resource</td></tr> 
+<tr><td class="rowheader">Domain </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Capacity">saro:Capacity</a></td></tr> 
+<tr><td class="rowheader">Range </td><td>  <a href="http://eis.iai.uni-bonn.de/vocab/saro/index.html#Skill">saro:Skill</a></td></tr> 
+<tr><td class="rowheader">Superproperties </td><td> --</td></tr> 
+<tr><td class="rowheader">Subproperties </td><td> --</td></tr> 
+<tr><td>Description </td><td> This property is used to refer to a capacity which could absorb the specific skill.</td></tr> 
+</tbody></table>
+
+
+
+
+</a></body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
