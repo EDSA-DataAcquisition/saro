@@ -134,8 +134,7 @@ saro:TransversalSkill a rdfs:Class ;
 
 saro:User a rdfs:Class ;
     rdfs:label "User" ;
-    rdfs:comment "The User class represents people who able to do one or more tasks " ;
-    = <http://www.gumo.org/#User> .
+    rdfs:comment "The User class represents people who able to do one or more tasks " .
 
 saro:UserTask a rdfs:Class ;
     rdfs:label "User Task" ;
